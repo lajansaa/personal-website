@@ -1,11 +1,49 @@
+:root {
+  --landing-bg-color: #F9D400;
+  --left-bg-color: #00BFBF;
+  --right-bg-color: #F49F00;
+  --top-bg-color: #AA4465;
+  --bottom-bg-color: #3AB795;
+}
+
 body {
   text-align: center;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
+  margin: 0;
 }
 
-#main-wrapper {
-  background-color: #F4F9E9;
+.contact-icons {
+  margin: 10px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper h1 {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.content-container {
+  text-align: left;
+  color: white;
+  margin: 50px auto;
+  width: 60%;
+}
+
+.content-container p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#landing-wrapper {
+  background-color: var(--landing-bg-color);
+  opacity: 0.7;
+  height: 1000px;
 }
 
 #left {
@@ -44,13 +82,35 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.header h1 {
+  font-size: 4rem;
+  color: #FBF1F1;
+  text-shadow: 5px 5px #000;
+  margin: 10px 0;
+}
+
+.header h2 {
+
+}
+
+.wrapper {
+  z-index: 999;
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+}
+
 #left-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
   left: -100%;
-  background-color: darkolivegreen;
-  z-index: 999;
+  background-color: var(--left-bg-color);
+  top: 0;
 }
 
 .nav {
@@ -71,7 +131,8 @@ body {
   width: 100%;
   height: 100%;
   right: -100%;
-  background-color: skyblue;
+  background-color: var(--right-bg-color);
+  top: 0;
 }
 
 #right-wrapper.closed {
@@ -83,7 +144,7 @@ body {
   width: 100%;
   height: 100%;
   bottom: -100%;
-  background-color: violet;
+  background-color: var(--bottom-bg-color);
 }
 
 #bottom-wrapper.closed {
@@ -95,12 +156,13 @@ body {
   width: 100%;
   height: 100%;
   top: -100%;
-  background-color: pink;
+  background-color: var(--top-bg-color);
 }
 
 #top-wrapper.closed {
   animation: slide-top 0.5s forwards;
 }
+
 
 
 @keyframes slide-left {

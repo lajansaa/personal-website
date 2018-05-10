@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Isa</title>
@@ -10,7 +10,7 @@
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-  <div id="main-wrapper">
+  <div id="landing-wrapper">
     <div id="left" class="nav" onClick="$('#left-wrapper').toggleClass('closed')">
       <p>ABOUT</p>
     </div>
@@ -28,19 +28,33 @@
       <h2>Web Developer</h2>
     </div>
   </div>
-  <div id="left-wrapper">
+  <div id="left-wrapper" class="wrapper">
     <h1>ABOUT</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#left-wrapper').toggleClass('closed')"></i>
+    <div class="content-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, doloribus accusamus eum recusandae iure eaque aliquam impedit provident accusantium temporibus asperiores dignissimos consequuntur placeat animi, veniam rerum eius. Veniam, quaerat.</p>
+    </div>
   </div>
-  <div id="right-wrapper">
-    <h1>PROJECT</h1>
+  <div id="right-wrapper" class="wrapper">
+    <h1>PROJECTS</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#right-wrapper').toggleClass('closed')"></i>
   </div>
-  <div id="bottom-wrapper">
+  <div id="bottom-wrapper" class="wrapper">
     <h1>CONTACT</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#bottom-wrapper').toggleClass('closed')"></i>
+    <div class="content-container">
+      <div class="contact-icons">
+        <a href="https://www.github.com/lajansaa/"><i class="fa fa-github" aria-hidden="true"></i> github.com/lajansaa</a>
+      </div><br />
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/isatokunaga/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/in/isatokunaga</a>
+      </div><br />
+      <div class="contact-icons">
+        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Lajansa@gmail.com</a>
+      </div>
+    </div>
   </div>
-  <div id="top-wrapper">
+  <div id="top-wrapper" class="wrapper">
     <h1>EXPERIENCE</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#top-wrapper').toggleClass('closed')"></i>
   </div>
