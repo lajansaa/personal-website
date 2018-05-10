@@ -1,0 +1,123 @@
+body {
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+#main-wrapper {
+  background-color: #F4F9E9;
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  transform: rotate(90deg);
+  left: -80px;
+  width: 250px;
+}
+
+#right {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  transform: rotate(-90deg);
+  width: 250px;
+}
+
+#top {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%) rotate(180deg);
+}
+
+#bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#left-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: darkolivegreen;
+  z-index: 999;
+}
+
+.nav {
+  letter-spacing: 10px;
+}
+
+.nav:hover {
+  cursor: pointer;
+  animation: letter-spacing 0.5s 1 forwards;
+}
+
+#left-wrapper.closed {
+  animation: slide-left 0.5s forwards;
+}
+
+#right-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  background-color: skyblue;
+}
+
+#right-wrapper.closed {
+  animation: slide-right 0.5s forwards;
+}
+
+#bottom-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  background-color: violet;
+}
+
+#bottom-wrapper.closed {
+  animation: slide-bottom 0.5s forwards;
+}
+
+#top-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  background-color: pink;
+}
+
+#top-wrapper.closed {
+  animation: slide-top 0.5s forwards;
+}
+
+
+@keyframes slide-left {
+  100% { left: 0; }
+}
+@keyframes slide-right {
+  100% { right: 0; }
+}
+@keyframes slide-bottom {
+  100% { bottom: 0; }
+}
+@keyframes slide-top {
+  100% { top: 0; }
+}
+
+@keyframes letter-spacing {
+  100% { letter-spacing: 20px;}
+}
+
+

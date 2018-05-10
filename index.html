@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Isa</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div id="main-wrapper">
+    <div id="left" class="nav" onClick="$('#left-wrapper').toggleClass('closed')">
+      <p>ABOUT</p>
+    </div>
+    <div id="top" class="nav" onClick="$('#top-wrapper').toggleClass('closed')">
+      <p>EXPERIENCE</p>
+    </div>
+    <div id="right" class="nav" onClick="$('#right-wrapper').toggleClass('closed')">
+      <p>PROJECTS</p>
+    </div>
+    <div id="bottom" class="nav" onClick="$('#bottom-wrapper').toggleClass('closed')">
+      <p>CONTACT</p>
+    </div>
+    <div class="header">
+      <h1>Isa Tokunaga</h1>
+      <h2>Web Developer</h2>
+    </div>
+  </div>
+  <div id="left-wrapper">
+    <h1>ABOUT</h1>
+    <i class="fa fa-times" aria-hidden="true" onClick="$('#left-wrapper').toggleClass('closed')"></i>
+  </div>
+  <div id="right-wrapper">
+    <h1>PROJECT</h1>
+    <i class="fa fa-times" aria-hidden="true" onClick="$('#right-wrapper').toggleClass('closed')"></i>
+  </div>
+  <div id="bottom-wrapper">
+    <h1>CONTACT</h1>
+    <i class="fa fa-times" aria-hidden="true" onClick="$('#bottom-wrapper').toggleClass('closed')"></i>
+  </div>
+  <div id="top-wrapper">
+    <h1>EXPERIENCE</h1>
+    <i class="fa fa-times" aria-hidden="true" onClick="$('#top-wrapper').toggleClass('closed')"></i>
+  </div>
+
+</body>
+</html>
