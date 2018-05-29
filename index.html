@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Isa</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <div id="landing-wrapper">
@@ -31,32 +30,75 @@
   <div id="left-wrapper" class="wrapper">
     <h1>ABOUT</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#left-wrapper').toggleClass('closed')"></i>
+    <img class="profile-pic" src="./images/profile_pic.jpeg">
     <div class="content-container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, doloribus accusamus eum recusandae iure eaque aliquam impedit provident accusantium temporibus asperiores dignissimos consequuntur placeat animi, veniam rerum eius. Veniam, quaerat.</p>
+      <p>I was first exposed to coding while I was working as a data analyst in my previous company. I was fascinated by how writing a simple program can automate menial and repetitive tasks such as importing data from various sources daily. This prompted me to embark on a learning journey with General Assembly (GA) to expand my knowledge. Coupled with my previous experience in database design and management, I'm looking forward to building intuitive and useful tools that will benefit end users one way another. </p>
     </div>
   </div>
   <div id="right-wrapper" class="wrapper">
     <h1>PROJECTS</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#right-wrapper').toggleClass('closed')"></i>
+    <div class="project-content-container">
+      <div class="project-container">
+        <a href="https://queryme-demo.herokuapp.com" target="_blank" ><img class="project-screenshot" src="./images/queryme_thumbnail.png"></a>
+        <div class="project-description">
+          <h3 class="project-name">QUERY ME</h3>
+          <h4>Tech Stack: Postgres, Semantic UI, Express.js, Node.js</h4>
+          <p>A data analytics abstraction layer that connects to relational databases and executes SQL queries pre-constructed by data analysts. Query results can be easily shared with and accessed by management teams in the form of reports or downloaded as excel files for further analysis. 
+          </p>
+          <p>More info:
+            <a href="https://github.com/lajansaa/query-me/tree/demo"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="project-container">
+        <a href="http://www.ollida.club/" target="_blank" ><img class="project-screenshot" src="./images/ollida_thumbnail.png"></a>
+        <div class="project-description">
+          <h3 class="project-name">OLLIDA</h3>
+          <h4>Tech Stack: Postgres, Material UI, React, Ruby on Rails</h4>
+          <p>An aggregator that predicts a K-Pop idol’s chances of winning a music award based on standard metrics such as YouTube views, Digital Sales and Album Volume etc. Built for K-Pop fans to see how well their idols are faring against others. They can then render support to their idols by buying music albums through an in-app marketplace.
+          </p>
+        </div>
+      </div>
+      <div class="project-container">
+        <a href="https://nocoli.herokuapp.com" target="_blank" ><img class="project-screenshot" src="./images/nocoli_thumbnail.png"></a>
+        <div class="project-description">
+          <h3 class="project-name">NOCOLI</h3>
+          <h4>Tech Stack: Postgres, Material UI, React, Express.js, Node.js</h4>
+          <p>A Google Doc-like note-taking tool, enhanced with a markdown parser and ability to organize notes using tags.</p>
+        </div>
+      </div>
+      <div class="project-container">
+        <a href="https://lajansaa.github.io/baby-monkey" target="_blank" ><img class="project-screenshot" src="./images/babymonkey_thumbnail.png"></a>
+        <div class="project-description">
+          <h3 class="project-name"></h3>
+          <h4>Tech Stack: HTML, CSS, jQuery</h4>
+          <p>A reaction-based game involving navigating Baby Monkey up a tree by grabbing a left or right branch before time runs out.</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="bottom-wrapper" class="wrapper">
     <h1>CONTACT</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#bottom-wrapper').toggleClass('closed')"></i>
     <div class="content-container">
       <div class="contact-icons">
-        <a href="https://www.github.com/lajansaa/"><i class="fa fa-github" aria-hidden="true"></i> github.com/lajansaa</a>
+        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Lajansa@gmail.com</a>
       </div><br />
       <div class="contact-icons">
         <a href="https://www.linkedin.com/in/isatokunaga/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/in/isatokunaga</a>
       </div><br />
       <div class="contact-icons">
-        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Lajansa@gmail.com</a>
+        <a href="https://www.github.com/lajansaa/"><i class="fa fa-github" aria-hidden="true"></i> github.com/lajansaa</a>
       </div>
     </div>
   </div>
   <div id="top-wrapper" class="wrapper">
     <h1>EXPERIENCE</h1>
     <i class="fa fa-times" aria-hidden="true" onClick="$('#top-wrapper').toggleClass('closed')"></i>
+    <div class="content-container">
+      
+    </div>
   </div>
 
 </body>

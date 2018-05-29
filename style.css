@@ -1,9 +1,9 @@
 :root {
   --landing-bg-color: #F9D400;
   --left-bg-color: #00BFBF;
-  --right-bg-color: #F49F00;
-  --top-bg-color: #AA4465;
-  --bottom-bg-color: #3AB795;
+  --right-bg-color: #AA4465;
+  --top-bg-color: #3AB795;
+  --bottom-bg-color: #F49F00;
 }
 
 body {
@@ -15,6 +15,12 @@ body {
 
 .contact-icons {
   margin: 10px 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
 }
 
 a {
@@ -36,7 +42,7 @@ a {
   width: 60%;
 }
 
-.content-container p {
+.content-container p, .project-description p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -163,7 +169,40 @@ a {
   animation: slide-top 0.5s forwards;
 }
 
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
 
+.project-content-container {
+  text-align: left;
+  color: white;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.project-container {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 10px;
+}
+
+.project-screenshot {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.project-description {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.project-name {
+  margin: 0;
+}
 
 @keyframes slide-left {
   100% { left: 0; }
